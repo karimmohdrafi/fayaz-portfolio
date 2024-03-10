@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="shortcut icon" href="./profile1.jpg" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/0f0bbe0984.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .bar {
+            font-size: 23px;
+        }
+
+        .Technical-bars .bar {
+            margin-top: 40px 0;
+            padding: 5px;
+        }
+
+        .Technical-bars .bar:first-child {
+            margin-top: 0;
+        }
+
+        .Technical-bars .bar:last-child {
+            margin-bottom: 0;
+        }
+
+        .Technical-bars .bar .info {
+            margin-bottom: 5px;
+        }
+
+        .Technical-bars .bar .info span {
+            font-size: 17px;
+            font-weight: 500;
+            animation: showText 0.5s 1s linear forwards;
+            opacity: 0;
+        }
+
+        .Technical-bars .bar .progress-line {
+            position: relative;
+            border-radius: 10px;
+            width: 100%;
+            height: 5px;
+            background-color: #000;
+            animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .Technical-bars .bar .progress-line span {
+            height: 100%;
+            background-color: #0ef;
+            position: absolute;
+            border-radius: 10px;
+            animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .progress-line.html span {
+            width: 90%;
+        }
+
+        .progress-line.css span {
+            width: 80%;
+        }
+
+        .progress-line.javascript span {
+            width: 70%;
+        }
+
+        .progress-line.MySQL span {
+            width: 70%;
+        }
+
+        .progress-line.REACTJS span {
+            width: 50%;
+        }
+
+        .progress-line span::after {
+            position: absolute;
+            padding: 1px 8px;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 3px;
+            top: -28px;
+            right: -20px;
+            animation: showText 0.5s 1.5s linear forwards;
+            opacity: 0;
+        }
+
+        .progress-line.html span::after {
+            content: "90%";
+        }
+
+        .progress-line.css span::after {
+            content: "80%";
+        }
+
+        .progress-line.javascript span::after {
+            content: "70%";
+        }
+
+        .progress-line.MySQL span::after {
+            content: "70%";
+        }
+
+        .progress-line.REACTJS span::after {
+            content: "50%";
+        }
+
+
+        .progress-line span::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 7px solid transparent;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-top-color: #000;
+            top: -10px;
+            right: 0;
+            animation: showText 0.5s 1.5s linear forwards;
+            opacity: 0;
+        }
+        .showone{
+            border: 2px solid white;
+            padding: 15px;
+        }
+        #one{
+            background-color: blue;
+            height: 7px;
+            width: 450px;
+            position: absolute;
+            left: 20%;
+            top: 38%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #two{
+            background-color: blue;
+            height: 7px;
+            width: 350px;
+            position: absolute;
+            left: 16%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #three{
+            background-color: blue;
+            height: 7px;
+            width: 390px;
+            position: absolute;
+            left: 17%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #four{
+            background-color: blue;
+            height: 7px;
+            width: 300px;
+            position: absolute;
+            left: 14%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #five{
+            background-color: blue;
+            height: 7px;
+            width: 350px;
+            position: absolute;
+            left: 16%;
+            top: 120%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #six{
+            background-color: blue;
+            height: 7px;
+            width: 420px;
+            position: absolute;
+            left: 19%;
+            top: 140%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #seven{
+            background-color: blue;
+            height: 7px;
+            width: 400px;
+            position: absolute;
+            left: 18%;
+            top: 161%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        .backone{
+            position: absolute;
+            top: 9%;
+            left: 84%;
+            transform: translate(-50%, -50%);
+        }
+        .backone:hover{
+            background-color: white;
+            border-radius: 10px;
+            padding: 4px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backone">
+        <h3 style="color: rgb(20, 52, 146); font-size: 20px;"><a href="./index.html" style="text-decoration: none; font-size: 20px; color: rgb(20, 52, 146);">BACK</a></h3>
+    </div>
+    <center>
+        <h2 style="color: rgb(20, 52, 146); font-family: 'Poppins', sans-serif; font-size: 30px;">My <span style="color: rgb(93, 122, 210);">Skills</span></h2>
+    </center><br>
+
+    <div class="showone">
+        <div class="bar"><i class="fa-brands fa-html5" style="color: orange;"></i>
+            <div class="info">
+                <span>
+                    <h4 style="color: white; font-family: 'Poppins', sans-serif;">HTML5</h4> <span
+                        class="addhtml"></span>
+                        <div id="one"></div>
+                </span>
+            </div>
+            <div class="progress-line html">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-brands fa-css3-alt" style="color: rgb(52, 121, 164);"></i>
+            <div class="info">
+                <span>
+                    <h4 style="color: white; font-family: 'Poppins', sans-serif;">CSS3</h4> <span class="addcss"></span>
+                    <div id="two"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-brands fa-js" style="color: yellow;"></i>
+            <div class="info">
+                <span>
+                    <H4 style="color: white; font-family: 'Poppins', sans-serif;">JAVASCRIPT</H4> <span
+                        class="addcss"></span>
+                        <div id="three"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-solid fa-database" style="color: blue;"></i>
+            <div class="info">
+                <span>
+                    <H4 style="color: white; font-family: 'Poppins', sans-serif;">MySQL</H4> <span
+                        class="addcss"></span>
+                        <div id="four"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-brands fa-bootstrap" style="color: purple;"></i>
+            <div class="info">
+                <span>
+                    <H4 style="color: white; font-family: 'Poppins', sans-serif;">BOOTSTRAP</H4> <span
+                        class="addcss"></span>
+                        <div id="five"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-brands fa-react" style="color: #0ef;"></i>
+            <div class="info">
+                <span>
+                    <H4 style="color: white; font-family: 'Poppins', sans-serif;">REACTJS</H4> <span
+                        class="addcss"></span>
+                        <div id="six"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="bar"><i class="fa-brands fa-github" style="color: white;"></i>
+            <div class="info">
+                <span>
+                    <H4 style="color: white; font-family: 'Poppins', sans-serif;">GITHUB</H4> <span
+                        class="addcss"></span>
+                        <div id="seven"></div>
+                </span>
+            </div>
+            <div class="progress-line css">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
